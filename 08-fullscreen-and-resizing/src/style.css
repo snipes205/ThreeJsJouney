@@ -1,0 +1,24 @@
+
+/*
+* no margin
+*/
+body {
+    margin: 0;
+}
+/**
+ no scroll
+*/
+html,
+body{
+    overflow: hidden;
+}
+/*
+    fixed position
+*/ 
+.webgl { 
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+    
+}
