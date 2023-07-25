@@ -21,7 +21,6 @@ const scene = new THREE.Scene()
  */
 const parameters = {
     count : 100000,
-    range : 30,
     radius : 5,
     branch : 3,
     spin    : 1,
@@ -113,7 +112,6 @@ generateGalacxy(parameters)
  * Debug
  */
 gui.add(parameters,'count',1,parameters.count,100).onFinishChange(()=>generateGalacxy(parameters));
-gui.add(parameters,'range',1,parameters.range,10).onFinishChange(()=>generateGalacxy(parameters));
 gui.add(parameters,'radius',1,parameters.radius * 10,1).onFinishChange(()=>generateGalacxy(parameters));
 gui.add(parameters,'branch',1,parameters.branch * 10,1).onFinishChange(()=>generateGalacxy(parameters));
 gui.add(parameters,'spin',-5,5,0.1).onFinishChange(()=>generateGalacxy(parameters));
